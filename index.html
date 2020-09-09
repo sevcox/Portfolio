@@ -28,7 +28,7 @@
       <!-- Image and text -->
       <!-- Name Logo -->
       <!-- Home,About,Skills,Portfolio,Contact -->
-      <nav class="navbar custom_nav">
+      <nav class="navbar custom_nav" id="customNav">
         <a class="navbar-brand" href="#home">
           <svg
             width="1em"
@@ -101,12 +101,12 @@
             <h1>about me</h1>
             <h4>So, this is me.</h4>
             <p>
-              Future
               <a
                 href="https://elevenfifty.org/courses/full-time-immersive/software-development/"
                 >Eleven Fifty Graduate</a
               >
-              just beginning to explore the world of software development.
+              ready to experience life as a software developer and continous
+              learner.
             </p>
             <p>
               I'm competitive, passionate, and focused in everything I do.
@@ -124,7 +124,7 @@
           </div>
           <div class="col-1"></div>
           <div class="col-4">
-            <img src="Assets/profilepicZoom.JPG" class="profile-pic" />
+            <img src="Assets/SEV_HS.jpg" class="profile-pic" />
           </div>
         </div>
       </div>
@@ -212,6 +212,37 @@
             <img src="Assets/bootstrap.svg" />
             <p class="mt-4">BOOTSTRAP</p>
           </div>
+          <div class="row linkedInRow">
+            <div class="col-lg-2"></div>
+            <div class="col-lg-10">
+              <div class="row text_row">
+                <svg
+                  class="linkSVG"
+                  width="4em"
+                  height="5em"
+                  viewBox="0 0 16 16"
+                  class="bi bi-link-45deg"
+                  fill="#c29448"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M4.715 6.542L3.343 7.914a3 3 0 1 0 4.243 4.243l1.828-1.829A3 3 0 0 0 8.586 5.5L8 6.086a1.001 1.001 0 0 0-.154.199 2 2 0 0 1 .861 3.337L6.88 11.45a2 2 0 1 1-2.83-2.83l.793-.792a4.018 4.018 0 0 1-.128-1.287z"
+                  />
+                  <path
+                    d="M6.586 4.672A3 3 0 0 0 7.414 9.5l.775-.776a2 2 0 0 1-.896-3.346L9.12 3.55a2 2 0 0 1 2.83 2.83l-.793.792c.112.42.155.855.128 1.287l1.372-1.372a3 3 0 0 0-4.243-4.243L6.586 4.672z"
+                  />
+                </svg>
+                <p class="linkedInText">
+                  View more achievements, skills, and experience on my
+                  <a
+                    class="linkedInLink"
+                    href="https://www.linkedin.com/in/severacox/"
+                    >LinkedIn.</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -224,95 +255,165 @@
           </div>
         </div>
         <div class="row mb-5">
-          <div class="col-sm gallery col-lg-4">
-            <a href="https://codepen.io/sevcox/pen/YzwVWaO" target="_blank"
-              ><div class="overlay">
-                <div class="text">
-                  view project &#8250;&#8250;&#8250;
-                </div>
-              </div></a
-            >
-            <div class="image_link_container">
-              <img src="Assets/creature.PNG" alt="Creature Project" />
+          <div class="col-sm gallery col-lg-4 flip-card">
+            <div class="flip-card-inner">
+              <a
+                href="https://codepen.io/sevcox/pen/YzwVWaO"
+                target="_blank"
+                class="flip-card-back"
+                ><div class="overlay">
+                  <div class="text">
+                    <h3>Pure CSS Creature</h3>
+                    <p>
+                      My first dive into CSS code. Utilizes border radius,
+                      positioning, margins, and padding.
+                    </p>
+                    <h6>View Project</h6>
+                  </div>
+                </div></a
+              >
+              <div class="image_link_container flip-card-front">
+                <img src="Assets/creature.PNG" alt="CSS Creature Project" />
+              </div>
             </div>
-            <div class="desc">Pure CSS Creature Project</div>
           </div>
-          <div class="col-sm gallery col-lg-4">
-            <a href="https://codepen.io/sevcox/pen/BajNMYJ" target="_blank"
-              ><div class="overlay">
-                <div class="text">
-                  view project &#8250;&#8250;&#8250;
-                </div>
-              </div></a
-            >
-            <div class="image_link_container">
-              <img src="Assets/blm.PNG" alt="Black Lives Matter Website" />
+
+          <div class="col-sm gallery col-lg-4 flip-card">
+            <div class="flip-card-inner">
+              <a
+                href="https://codepen.io/sevcox/pen/BajNMYJ"
+                target="_blank"
+                class="flip-card-back"
+                ><div class="overlay">
+                  <div class="text">
+                    <h3>HTML & CSS Intro Blog</h3>
+                    <p>
+                      My first website built around the Black Lives Matter
+                      movement. Utilizes parallax, forms, iframes, and code
+                      organization by naming with intent.
+                    </p>
+                    <h6>View Project</h6>
+                  </div>
+                </div></a
+              >
+              <div class="image_link_container flip-card-front">
+                <img src="Assets/blm.PNG" alt="Black Lives Matter Blog" />
+              </div>
             </div>
-            <div class="desc">HTML/CSS Blog</div>
           </div>
-          <div class="col-sm gallery col-lg-4">
-            <a
-              href="https://github.com/sevcox/GoldBadge_ConsoleAppChallenges"
-              target="_blank"
-              ><div class="overlay">
-                <div class="text">
-                  view project &#8250;&#8250;&#8250;
-                </div>
-              </div></a
-            >
-            <div class="image_link_container">
-              <img
-                src="Assets/businesschallenges.PNG"
-                alt="C# Business Challenges"
-              />
+
+          <div class="col-sm gallery col-lg-4 flip-card">
+            <div class="flip-card-inner">
+              <a
+                href="https://github.com/sevcox/GoldBadge_ConsoleAppChallenges"
+                target="_blank"
+                class="flip-card-back"
+                ><div class="overlay">
+                  <div class="text">
+                    <h3>C# Business Challenges</h3>
+                    <p>
+                      A series of assemblies utilizing repository pattern, 4
+                      major principles of Object Orientated Programming, and
+                      analysis of business problems with logic.
+                    </p>
+                    <h6>View Project</h6>
+                  </div>
+                </div></a
+              >
+              <div class="image_link_container flip-card-front">
+                <img
+                  src="Assets/businesschallenges.PNG"
+                  alt="c# Business Challenges"
+                />
+              </div>
             </div>
-            <div class="desc">.Net Framework Business Challenges</div>
           </div>
         </div>
         <div class="row">
-          <div class="col-sm gallery col-lg-4">
-            <a
-              href="https://sevcox.github.io/GoldBadge_StaticStoreFront/"
-              target="_blank"
-              ><div class="overlay">
-                <div class="text">
-                  view project &#8250;&#8250;&#8250;
-                </div>
-              </div></a
-            >
-            <div class="image_link_container">
-              <img src="Assets/roots.PNG" alt="Static Store Front" />
+          <div class="col-sm gallery col-lg-4 flip-card">
+            <div class="flip-card-inner">
+              <a
+                href="https://sevcox.github.io/GoldBadge_StaticStoreFront/"
+                target="_blank"
+                class="flip-card-back"
+                ><div class="overlay">
+                  <div class="text">
+                    <h3>Static Store Front</h3>
+                    <p>
+                      Store front utilizng hover effects, animations, and
+                      practice with responsive design.
+                    </p>
+                    <h6>View Project</h6>
+                  </div>
+                </div></a
+              >
+              <div class="image_link_container flip-card-front">
+                <img src="Assets/roots.PNG" alt="Static Store Front" />
+              </div>
             </div>
-            <div class="desc">HTML/CSS Static Store Front</div>
           </div>
-          <div class="col-sm gallery col-lg-4">
-            <a
-              href="https://github.com/sevcox/BlueBadge_WonkaTreatTracker"
-              target="_blank"
-              ><div class="overlay">
-                <div class="text">
-                  view project &#8250;&#8250;&#8250;
-                </div>
-              </div></a
-            >
-            <div class="image_link_container">
-              <img src="Assets/webapi.PNG" alt="Web API ReadMe" />
+
+          <div class="col-sm gallery col-lg-4 flip-card">
+            <div class="flip-card-inner">
+              <a
+                href="https://github.com/sevcox/BlueBadge_WonkaTreatTracker"
+                target="_blank"
+                class="flip-card-back"
+                ><div class="overlay">
+                  <div class="text">
+                    <h3>ASP.NET Web API</h3>
+                    <p>
+                      Web app designed to track inventory and sell product to
+                      vendors. Utilizes SQL Server, Entity Framework Code First,
+                      foreign key relationships(including joining tables),
+                      PostMan, and Team Git.
+                    </p>
+                    <h6>View Project</h6>
+                  </div>
+                </div></a
+              >
+              <div class="image_link_container flip-card-front">
+                <img src="Assets/webapi.PNG" alt="Web API README" />
+              </div>
             </div>
-            <div class="desc">ASP.NET Web API</div>
           </div>
+
+          <div class="col-sm gallery col-lg-4 flip-card">
+            <div class="flip-card-inner">
+              <a
+                href="https://github.com/sevcox/RedBadge_SneaX/tree/master"
+                target="_blank"
+                class="flip-card-back"
+                ><div class="overlay">
+                  <div class="text">
+                    <h3>ASP.NET Web MVC</h3>
+                    <p>
+                      Sneaker trading app designed for users to bid, ask, and
+                      trade their sneakers with an additional wishlist feature.
+                      Utilizes Razor Pages, Bootstrap, Javascript, and Azure
+                      deployment.
+                    </p>
+                    <h6>View Project</h6>
+                  </div>
+                </div></a
+              >
+              <div class="image_link_container flip-card-front">
+                <img src="Assets/SneaX.PNG" alt="SneaX MVC" />
+              </div>
+            </div>
+          </div>
+          <!-- <div class="col-sm gallery col-lg-4">
+           
           <div class="col-sm gallery col-lg-4">
             <a href="#portfolio" target="_blank"
               ><div class="overlay">
-                <div class="text">
-                  view project &#8250;&#8250;&#8250;
-                </div>
+                <div class="text">view project &#8250;&#8250;&#8250;</div>
               </div></a
             >
             <div class="image_link_container">
               <img src="Assets/comingsoon.jpg" alt="Coming Soon" />
             </div>
-            <div class="desc">Future Project</div>
-          </div>
+          </div> -->
         </div>
       </div>
     </section>
@@ -418,6 +519,24 @@
     <!-- Build on top of this -->
     <!-- Home Typewriter Animation -->
     <script>
+      var scrollPosition;
+
+      if (window) {
+        window.addEventListener("scroll", function (e) {
+          scrollPosition = window.scrollY;
+          let el = document.getElementById("customNav");
+
+          if (scrollPosition > 0) {
+            el.style.backgroundColor = "#eeeff4";
+            el.style.boxShadow =
+              "0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)";
+          } else {
+            el.style.backgroundColor = "transparent";
+            el.style.boxShadow = "none";
+          }
+        });
+      }
+
       var TypeWriter = function (el, toRotate, period) {
         this.toRotate = toRotate;
         this.el = el;
